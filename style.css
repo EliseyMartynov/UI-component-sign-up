@@ -167,12 +167,20 @@ a {
 
 @media (max-width: 700px) {
     .container {
-        height: fit-content;
+        height: 100vh;
     }
+
     .sign {
-    width: 90%;
     height: fit-content;
-    padding: 0.5rem;
+    padding: 2rem 10% 0.2rem;
     justify-content: center;
+    }
+
+    .sign__googletext {
+        text-align: center;
+    }
+
+    .sign__already a {
+        display: block;
     }
 }
