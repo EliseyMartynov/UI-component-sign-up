@@ -1,0 +1,47 @@
+<!--
+Design from:
+    https://uidesigndaily.com/posts/figma-sign-up-log-in-authentication-day-1109
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <main class="container" role="main">
+      <div class="sign">
+        <div class="sign__header">
+         <h2>Sign up for free</h2>
+         <div class="sign__googlebox">
+          <span class="sign__googlelogo"><img src="Group.svg" alt=""></span>
+          <span class="sign__googletext">Sign up with Google</span>
+         </div>
+         <span class="sign__ortext">Or sign up with email</span>
+        </div>
+
+        <div class="sign__body">
+          <div class="sign__formbox">
+            <form action="#" class="sign__form">
+              <label for="sign__fullname">Full name</label>
+              <input type="text" class="sign__input" placeholder="e.g. Jane Doe" required>
+              <label for="sign__email">Email address</label>
+              <input type="text" class="sign__input" placeholder="your@email.com" id="email-input">
+              <input type="submit" value="Get started" class="sign__submit alerting" id="form-submit">
+            </form>
+            <div class="sign__login">
+              <span class="sign__already">Already have an account? <a href="#">Log in</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

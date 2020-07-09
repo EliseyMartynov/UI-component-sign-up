@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    --primary: #FA3B71;
+    --primary-hover: #FA547F;
+    --info: #4A3CFF;
+    --info-hover: #466FFF;
+    --link: #5B86E6;
+    --secondary-text: #949495;
+    --prime-text: black;
+    --inbox-text: white;
+    --validate-error: #F23C;
+    --validate-empty: #999;
+    --validate-cool: #571;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited,
+a {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1C44;
+    height: 100vh;
+
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--inbox-text);
+    padding: 2rem 5rem;
+    width: 30rem;
+}
+
+.sign__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign__header h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 3rem;
+}
+
+.sign__googlebox {
+    display: flex;
+    background-color: var(--info);
+    color: var(--inbox-text);
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign__googlebox:hover,
+.sign__googlebox:active  {
+    background-color: var(--info-hover);
+    cursor: pointer;
+}
+
+.sign__googlelogo {
+    display: flex;
+    background-color: var(--inbox-text);
+    border-radius: 5px;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.sign__googletext {
+    font-size: 18px;
+    margin: auto;
+    line-height: 22px;
+}
+
+.sign__ortext {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--secondary-text);
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.sign__ortext::before {
+    content: '';
+    width: 30px;
+    margin: auto;
+    background-color: var(--secondary-text);
+    border: 1px solid var(--secondary-text);
+}
+
+.sign__ortext::after {
+    content: '';
+    width: 30px;
+    margin: auto;
+    background-color: var(--secondary-text);
+    border: 1px solid var(--secondary-text);
+}
+
+.sign__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+}
+
+.sign__form label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.sign__input {
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D9DCED;
+}
+
+.sign__input:focus {
+    outline-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+                0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign__submit,
+.alerting /*for JS validation*/ {
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--inbox-text);
+    padding: 0.7rem;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.sign__submit:hover,
+.sign__submit:active {
+    background-color: var(--primary-hover);
+}
+
+.sign__login {
+    text-align: center;
+}
+
+.sign__already {
+    font-weight: 500;
+}
+
+.sign__already a {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--link);
+}
+
+.sign__already a:hover,
+.sign__already a:active {
+    text-decoration: underline;
+}
